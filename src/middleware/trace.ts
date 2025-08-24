@@ -11,7 +11,6 @@ export async function traceMiddleware(c: Context, next: Next) {
   await next();
 }
 
-// Extend Hono's context type to include traceId
 declare module 'hono' {
   interface ContextVariableMap {
     traceId: string;

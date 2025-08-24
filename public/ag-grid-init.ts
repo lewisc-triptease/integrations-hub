@@ -1,4 +1,4 @@
-import AgGrid from 'ag-grid-community';
+import AgGrid, { type GridOptions, type ColDef, type ColGroupDef } from 'ag-grid-community';
 
 declare global {
   interface Window {
@@ -16,7 +16,7 @@ function booleanRenderer(params: any) {
   return params.value || '';
 }
 
-const columnDefs = [
+const columnDefs: Array<ColDef | ColGroupDef> = [
   {
     headerName: "Integration",
     field: "integrationName",
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const integrations = JSON.parse(integrationsAttr);
 
         if (integrations && integrations.length > 0) {
-          const gridOptions = {
+          const gridOptions: GridOptions = {
             columnDefs,
             rowData: integrations,
             defaultColDef: {
@@ -109,11 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
             pagination: true,
             paginationPageSize: 20,
             paginationPageSizeSelector: [10, 20, 50, 100],
-            suppressRowClickSelection: true,
-            enableRangeSelection: true,
             enableCellTextSelection: true,
             copyHeadersToClipboard: true,
-            suppressCopyRowsToClipboard: false,
             rowHeight: 40,
             headerHeight: 45,
             animateRows: true,

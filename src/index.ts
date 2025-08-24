@@ -1,7 +1,6 @@
 import { configure, getConsoleSink, getLogger } from "@logtape/logtape";
 import { createApp } from "./app.js";
 
-// Configure logging
 await configure({
   sinks: { console: getConsoleSink() },
   loggers: [

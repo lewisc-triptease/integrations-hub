@@ -14,7 +14,6 @@ export function handler() {
       return c.html(Homepage({ integrations }));
     } catch (error) {
       logger.error({ message: "Failed to fetch integrations", traceId, error: String(error) });
-      // If data fetching fails, still render the page but without data
       return c.html(Homepage({ integrations: [] }));
     }
   }
