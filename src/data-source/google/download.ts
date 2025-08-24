@@ -1,5 +1,9 @@
 import { google } from "googleapis";
 import { parseIntegrationConfigsFromRows } from './parse.js';
+import { MemoryCache } from '../../util/memory-cache.js';
+
+const sheetCache = new MemoryCache<any>();
+const FIFTEEN_MIN_MS = 15 * 60 * 1000;
 
 async function getSheetTitleByGid(auth: any, spreadsheetId: string, gid: string): Promise<string> {
   const sheets = google.sheets({ version: "v4", auth });
@@ -52,13 +56,31 @@ export async function createSheetsAuth() {
 }
 
 
+type FetchOverrides = {
+  cache?: MemoryCache<any>;
+  ttlMs?: number;
+  getSheetTitleByGid?: typeof getSheetTitleByGid;
+  getValues?: typeof getValues;
+  parse?: typeof parseIntegrationConfigsFromRows;
+};
+
 export async function fetchIntegrationConfigsViaApi(
   spreadsheetId: string,
   gid: string,
-  authClient?: any
+  authClient?: any,
+  overrides?: FetchOverrides
 ) {
-  const auth = authClient ?? await createSheetsAuth();
-  const title = await getSheetTitleByGid(auth, spreadsheetId, gid);
-  const rows = await getValues(auth, spreadsheetId, title);
-  return parseIntegrationConfigsFromRows(rows);
+  const key = `google:sheet:${spreadsheetId}:${gid}`;
+  const cache = overrides?.cache ?? sheetCache;
+  const ttl = overrides?.ttlMs ?? FIFTEEN_MIN_MS;
+  const getTitle = overrides?.getSheetTitleByGid ?? getSheetTitleByGid;
+  const getVals = overrides?.getValues ?? getValues;
+  const parse = overrides?.parse ?? parseIntegrationConfigsFromRows;
+
+  return cache.getOrSet(key, ttl, async () => {
+    const auth = authClient ?? await createSheetsAuth();
+    const title = await getTitle(auth, spreadsheetId, gid);
+    const rows = await getVals(auth, spreadsheetId, title);
+    return parse(rows);
+  });
 }

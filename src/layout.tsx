@@ -13,7 +13,7 @@ export function Layout({ title, children }: PropsWithChildren<LayoutProps>) {
         name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
       />
-      <title>{title ? 'Campaign Manager › ' + title : 'Campaign Manager'}</title>
+      <title>{title ? 'Integrations Hub › ' + title : 'Integrations Hub'}</title>
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
       <link

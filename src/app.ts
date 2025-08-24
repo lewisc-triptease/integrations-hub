@@ -14,7 +14,7 @@ export function createApp() {
   app.use('*', traceMiddleware);
   
   // Health check
-  app.get("/health", (c) => Promise.resolve(c.json({ status: "ok" })));
+  app.get("/health", (c) => Promise.resolve(c.json({ status: "ok" }, 200)));
   
   // API routes
   app.route('/api', apiRoutes);

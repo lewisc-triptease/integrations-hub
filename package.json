@@ -9,10 +9,12 @@
     "bun": ">=1.0.0"
   },
   "scripts": {
-    "dev": "bun --watch src/index.ts",
-    "build": "bun build src/index.ts --outdir dist --target node --format esm",
+    "dev": "bun run build:public && bun --watch src/index.ts",
+    "dev:watch": "bun run build:public --watch & bun --watch src/index.ts",
+    "build": "bun run build:public && bun build src/index.ts --outdir dist --target node --format esm",
+    "build:public": "bun build public/*.ts --outdir public --target browser --format iife",
     "start": "bun run dist/index.js",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist public/*.js",
     "type-check": "tsc --noEmit",
     "lint": "eslint src --ext .ts,.tsx",
     "test": "bun test"
