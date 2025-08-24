@@ -1,0 +1,242 @@
+,Product Specifications,,,,,,,,,,,Connectivity Specifications,,,,,,,,,Connectivity Specifications,,,,,,,,,GOOD TO KNOW,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,DMP ,,,,EMAIL ACTIVATION,,,WIHP - META CONDITIONS,,,,,,,,,Rockhopper / Wihphopper (Wihp + Rockhopper) - META CONDITIONS,,,,,,,,,Additional Comments,,
+,,,,,DMP is required to access Price Match and Email Activation,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"
+Booking Engine",Convert,On-site Messages,Retargeting ,Paid Search ,"
+DMP
+All data within the platform ","Price Match
+","CRM Integration
+(Salesforce, Mailchimp, Revinate & Pushtech)
+CRM integration list",Guest Behavioural Data,"Cart Abandonment
+NOTION","
+Back in Stock
+Back-in-stock features integrate with booking engines supported","Connectivity Options
+Features by connectivity partner",Metas Channels,Coverage,"
+Blackout 
+When the bet is reduced due to being in disparity","
+Parity Boost 
+When we increase the bet to have a better direct price
+",Price Match ,"Strikethrough 
+This is when you can cross out the rate. EG:$150","
+Geo Rates
+Different rates per market
+","Device Rates 
+Different rates per device","Callouts & Room Bundles:
+Let you define multiple room types for a single property, or combine an itinerary of a room with rate features.",Metas Channels,Coverage,"
+Blackout 
+When the bet is reduced due to being in disparity","
+Parity Boost 
+When we increase the bet to have a better direct price
+","
+Price Match 90 days window 
+(ONLY if they don't have Geo Rates nor Device Rates)","
+Strikethrough 
+This is when you can cross out the rate. EG:$150","
+Geo Rates
+Different rates per market
+","Device Rates 
+Different rates per device","Callouts & Room Bundles:
+Let you define multiple room types for a single property, or combine an itinerary of a room with rate features.",Known Additional Fees,Sales need to know,Technical Implementation Comments
+aboveproperty,Y,Y,Y,Y,Y,-,-,-,-,-,-,,,,,,,,,,,,,,,,,,,,Integration review before selling. Include URL deeplink,
+Alaric,Y,Y,Y,Y,Y,N,-,-,-,Y,wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,N,N,N,N,N,,"Connectivity is currently down not able to get prices.
+Do not sell Price Match (meta and OS) Meta just possible with WIHP. ",Send onboard scripts
+ASI (Anand Systems),Y,Y,Y,Y,Y,-,-,-,-,Y,Rockhopper,N,N,N,N,N,N,N,N,N,Google,90x7+2 adults,N,Y,-,-,N,N,Y,,,"Check iframe; Send API (hotel) key and Client key to account manager
+Connect with Ubio"
+Availpro,Y,Y,Y,Y,Y,N,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,Google,180x2,N,Y,-,-,-,-,Y,"Meta: AvailPro (150€ One Off Set Up, 25€ Monthly Maintenance - Paid to WIHP by TT); Convert: Triptease pays €50 per hotel integration fee when group >10 hotels","
+","z-index = 1001 and above; Send client key and API key to client or client's account manager in the BE. Additionally, send the Integration ID to webpartner@d-edge.com to get the integration in d-edge's GTM. NB: This process is temporary until D-edge adapts the extranet for their team to only add the Integration ID."
+Avvio,Y,Y,Y,Y,Y,N,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,Google,180x7,N,Y,N,-,N,N,Y,,"Avvio has their own meta connectivity and manual bid management (run by a team) We have run a number of marketing initiatives with them in the past.
+
+",Send API (hotel) key and Client key to account manager. Do NOT connect hotels on avvio to meta via Rockhopper - they block our requests
+AZDS,Y,Y,Y,Y,Y,Y,,,Y,Y,Wihphopper,,180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,Custom booking engine using Synxis API,Send API (hotel) key and client key to their contact. You can always contact mailto:support@azdsm.net with any issues. Adam the CEO is a nice guy. Wihp required the Synxis ID
+B4Checkin,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+Blastness,Y,Y,Y,Y,Y,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Send API (hotel) key and Client key to account manager
+BookAssist,Y,Y,Y,Y,Y,-,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,Annual charge of €69 to integrate our script onto hotel website (if created by Bookassist),"PARITY MONITORING DOES NOT WORK ON MOBILE (to review ) 
+ 
+Before selling provide URL deeplink integration review",Update: 16/4/20 - to send API keys to account manager as the integration we have written is incomplete without the BE's help
+BookEasy,Y,Y,Y,y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+Booking2Hotels,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+BookingExpert,Y,Y,Y,y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Send onboard script
+RoomStay,Y,Y,Y,Y,Y,Y,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,Y (90 days),-,N,N,Y,,,Send Script tag
+Evancy,Y,Y,Y,y,Y,-,-,-,-,Y,Rockhopper,N,N,N,N,N,N,N,N,N,Google,90x7+2 adults,N,Y,-,-,N,N,Y,,,For now this is a custom integration for client: EVANCY
+bookingengine2 ( Dingus),Y,Y,Y,y,Y,-,-,,,,WIHP,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,,Y,Y,N,N,N,N,-,N,N,N,N,,,
+Bookonlinenow,Y,Y,Y,Y,Y,Y,-,-,Y,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y,-,N,N,Y,,"review before selling: does the confirmation page display the required info (check-in/out date, booking reference, number of guests) after checkout? if not, submit integration review",Send onboard scripts to account manager (if there's no access to GTM container)
+BookVisit,Y,Y,Y,Y,Y,-,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,Integration check for URL deeplink,Send onboard scripts to account manager (if no GTM)
+Bookwize,Y,Y,Y,-,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+Busy-Rooms,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Send onboard scripts to account manager mailto:support@busy-rooms.com
+Centrotel,Y,Y,Y,-,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,This is a custom integration for a client who will churn. ,"Send API (hotel) key and client key - issues with iframes in the past, not known if resolved"
+city-express,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+Clock Software,Y,Y,Y,Y,Y,-,-,-,-,Y,-,-,-,-,-,N,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,"Clock PMS+ has two versions of the booking engine:- WRS v1 The booking engine was hostd on Clock PMS+ page and as such the scripts were directly installed in Clock PMS+ configurations;
+. Send Script as normal, and ask BE to integrate inside the Iframe.
+- WRS v2(also known as Book Direct) Where the booking engine overlaps the hotel's website and the tracking scripts are installed onto the hotel's website as described here and can exchange data with the booking engine. Send client this: Since WRS v2 is in use, there is a new way to add scripts and track conversions on the hotel's website. The scripts should be built and installed by your website administrator using the parameters from this article in order to pull data from WRS v2. For further guidance, there is also a live demo video from Clock explaining how to action this, see the link here."
+Cloudbeds,Y,Y,Y,Y,Y,N ( see notes ) ,-,-,Y,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,FALSE,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,FALSE,-,N,N,Y,,"Only gallery view layout supported. 
+
+
+
+Price Match only runs with clients who does not have exisiting offers or promotions live.
+Promo codes can not apply on top of these offers. 
+Check in price-match channel with a URL example for review","There is Gallery & List view. Lighthouse has only written the integration for Gallery view. Use Onboard scripts, client can access their Cloudbed extranet and add the scripts onto ""Javascript"" section
+
+Meta note (if price source = website direct): Remind Rockhopper they need to configure something on their backend in order to be able to obtain prices for Cloudbeds properties. Use onboarding sheet to notify RH team"
+Cubilis,Y,Y,Y,Y,Y,-,-,-,-,-,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,-,N,N,N,N,,,Check Ubio connectivity before connec with WIHP
+DirectWithHotels,Y,Y,Y,y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Must request that scripts are injected into Steps 1&2 of the booking engine and the confirmation page; Send API keys to account manager (known issue: changing currency and then changing search dates will always show price check in USD)
+Dirs21,N,N,N,N,N,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,D-edge: Extra charge applies as hotels must have purchased Premium Widget package and pay monthly for Dirs21 connectivity to D-Edge. Triptease pays Dirs21 15% referral fee on contracted hotels for the first year of their contract. Hotels have to be on Premium Widget package in order to get Triptease.,Integration review before selling. Include URL deeplink,"Contact support@dirs21.de 
+Provide hotel name, website, API (hotel) Key and Client key. 
+Expected to integrate within a day"
+EasyBooking,Y,Y,Y,Y,Y,-,-,-,-,-,Rockhopper,N,N,N,N,N,N,N,N,N,Google,90x7+2 adults,N,Y,-,-,N,N,Y,,Integration check for URL deeplink,
+EasyConsulting,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+Elina PMS,Y,Y,Y,-,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Send onboard to account manager
+EmarketingEye,Y,Y,Y,-,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Send onboard scripts
+Ericsoft,Y,Y,Y,-,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+Ezee Cloud PMS/ eZee Reservation,Y,Y,Y,Y,Y,-,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,,"Send Client Key and hotel API key to account manager
+BE must not be on an iframe"
+e-GDS,Y,Y,Y,y,Y,-,-,-,-,-,Rockhopper,N,N,N,N,N,N,N,N,N,Google,90x7+2 adults,N,Y,-,-,N,N,Y,,"Custom Integration ""Bensuade"" ","integrationName: ""egds""
+would need a child age parameter for this deeplink as its a required input
+Also, the promo parameter is promoCode "
+D-EDGE Attraction (ex: Fastbooking),Y,Y,Y,Y,Y,Y,-,-,n,Not suitable,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,"Important - z-index = 998 so that PC does not block ""NEXT"" button to book on mobile; Send client key and API key to client or client's account manager in the BE. Additionally, send the Integration ID to webpartner@d-edge.com to get the integration in d-edge's GTM. NB: This process is temporary until D-edge adapts the extranet for their team to only add the Integration ID.
+"
+Furama,Y,Y,Y,Y,Y,-,-,-,-,-,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,-,N,N,N,N,,,Custom booking engine for client Furama
+GuestCentric,Y,Y,Y,Y,Y,Y,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,"""Guestcentric bills hotel a
+ Setup fee: €75 per hotel
+ Maintenance fee: €30 per hotel per month""",Check if Integration can be done via GTM,Add onboard script on client's GTM container
+Guest Rez,Y,Y,Y,Y,Y,-,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,-,-,N,N,Y,,PM check integration review,
+Guestline DBM,Y,Y,Y,Y,Y,see notes,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,FALSE,-,N,N,Y,New fee via Wihp: 199 GBP setup + 0.99 per room per month,"We can run PM but not all clients are able to apply promo codes to all rates. Check if they are able to do it.
+Integration PM check need it","Ask client to send request to Guestline to allow WIHP set up. Issues with confirmation script on multi hotel groups, open page to see GTM config"
+Hart PMS (hart),Y,Y,Y,Y,Y,-,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,,
+High Level Software,Y,Y,Y,-,N,N,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,N,-,-,-,-,,They don't support deeplinking ,"Use onboard via GTM, HLS are very responsive and quick to add GTM codes. You may need to ask them to update the JSON @type. but hoping they will make this a universal change. if gtm is not already on booking engine, they will implement, but make sure you send a link to the hotel..."
+Hoteliers.com,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,We do not support Meta,"Use onboard script, on newer versions will have to go within the iframe"
+Hoteliers.guru,Y,Y,Y,Y,Y,Y,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,For MT Send integration ID to hoteliers.guru/client and ask for the hotel_id for each property. When adding in Rookery make sure that the BE URL you add follows this format (change hotel id): https://ibe.hoteliers.guru/ibe/search-room-rate?hotel_id=2&check_in=2022-09-30&check_out=2022-10-01&chknoofroom=1&total_adult[0]=2&total_child[0]=0
+HotelNetSolutions,Y,Y,Y,Y,Y,-,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,,Send API keys to: (pflug@hotelnetsolutions.de) and to support@hotelnetsolutions.de)
+HotelNetSolutions / Cbooking,Y,Y,Y,Y,Y,Y,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,
+Hotelogix,Y,Y,Y,y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,"Integration currently written by BE - if Triptease writes integration then could solve issue - £10K needed
+Integration Review needed",Send Client key and hotel API keys to account manager
+HotelKey (hotelkeyapp),Y,Y,Y,Y,Y,,,,,,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,FALSE,-,N,N,Y,,,
+hotelpartner,y,Y,Y,Y,Y,-,,,,,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+Hotetec,Y,Y,Y,Y,Y,N,-,-,-,-,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,N,N,N,N,N,,Complicated BE - FYI it offers MT and had been blocking some go lives for integration,"Send onboard script, check with LH to see if script can pick up identifier in url"
+iHotelier / TravelClick,Y,Y,Y,Y,Y,"We can do Price Match as long as they don't have Geo Rates and Price Match replaces the member rate strategy.
+View example",IMPORTANT: With the CRM offered by TC we do not have integration at the moment.,Y,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,WIHP - 300$ per property per month,,Ask client to request GTM access for ops@triptease.com to their booking engine Account Manager
+InnQuest (WebBook),Y,Y,Y,Y,Y,-,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,"InnQuest receives 15% referral fees of first year contracts between mutual customers
+All new InnQuest customers should be integrated with Triptease script. You can then use the parity and conversion data in the dashboard to show to prospects in your calls
+","Contact sclientsales@innquest.com if not pre-integrated, email support@innquest.com , send over client and hotel key.
+Wihp does no longer connect Innquest as they can't reach Google price accuracy standard requirements to keep a good price accuracy."
+InnQuest (WebBook),Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+InnStyle,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,N,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,
+Innroad,Y,Y,Y,Y,Y,,,,,,,,,,,,,,,,,,,,,,,,,,Integration review before selling. Include URL deeplink,
+IQrez (IQware),Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Check Integration review- Parity Monitoring does not work. Hotels will get lots of false disparities. Currently no fix possible,Client creates a GTM container on their booking engine and installs the integration as written by their team.
+Maestro,Y,Y,Y,Y,Y,-,-,-,-,-,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,-,N,N,N,N,~100$ per property per month,Integration review before selling. Include URL deeplink,
+Maxmind,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Send Client key and API keys to booking engine contact
+Mews,Y,Y,Y,Y,Y,Y,-,-,N,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,Use onboard script on client's GTM container
+Mirai,Y,Y,Y,y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,
+Namastay,Y,Y,Y,Y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,Send to Namastay bootstrap script without the Integration ID
+Neobookings,Y,Y,Y,Y,Y,Y,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,Send onboard script
+NetAffinity,Y,Y,Y,Y,Y,Y,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,Y,180x7,N,Y,Y (90 days),-,N,N,y,,,Ask the hotel champion for their NetAffinity account manager email. Send to NetAffinity API Hotel Key and Client Key. Be aware that NetAffinity might charge the hotel for website integration. Send these instructions for the hotelier to follow: https://support.netaffinity.com/knowledge/triptease-integration-booking-engine-version-2
+NH,Y,Y,Y,Y,Y,-,-,-,-,Y,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,-,N,N,N,N,,Client churned-  Integration review before selling. Include URL deeplink,Custom client only in convert at the moment
+Omnibees ,Y,Y,Y,Y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),Coming Soon only for GHA,N,N,Y,,,Custom client only in convert at the moment
+Olive,Y,Y,Y,Y,Y,-,-,-,-,-,Wihphopper,,,,,,,,,,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,,,,,,,,,,
+OpenHotel,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Send API keys to help@openhotel.com
+Opera / Oracle (OWS method - not OXI),Y,Y,Y,Y,-,-,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Send onboard script
+Oracle (Webhotel),Y,Y,Y,y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,"Triptease-owned integration, via onboard script. If they have a GTM container, request access—otherwise send to client for implementation by account manager/support.
+ 
+
+ In addition, send the following instructions to client - 
+ You would need to create an SR (Service Request) via your My Oracle Support (MOS) Tool with a message to whitelist *.triptease.io domain. 
+ Log this case against the OHDCS (Oracle Hospitality Distribution Cloud Service fka. http://myfidelio.net/). 
+ The application team will take care of the whitelisting to allow the Triptease scripts fire on your booking engine."
+P3,Y,Y,Y,Y,Y,-,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,Review for PM,Dalata main client on this booking engine. Send Client Key and API keys to booking engine contact
+palace-resorts,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Churned client ,Custom client only in convert at the moment
+Paraty Tech,Y,Y,Y,Y,Y,Y,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,Send onboard script
+Pegasus,Y,Y,Y,Y,Y,Y,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,Y (90 days),-,N,N,Y,,,Send script and api key to account manager (See Notion notes under PIMs workspace)
+Pelican,Y,Y,Y,Y,Y,-,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,,
+Phobs,-,-,-,-,-,N,-,-,-,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,N,-,-,-,-,,"Currenlty Phobs is blocking a golive, preventing to fix the integration, as they run meta campaigns. ",
+Profitroom,Y,Y,Y,Y,Y,Y,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,PM does not work if client has member rates.,Integration via GTM - detailed instructions in PIMS BE GUIDE. 
+Protel,Y,Y,-,-,Y,-,-,-,-,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Previous issues with Confirmation page not tracking bookings
+RateTiger / eRevMax,-,-,-,-,Y,-,-,-,-,-,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,-,N,N,N,N,,Integration review before selling. Include URL deeplink,https://www.notion.so/triptease/Ratetiger-Channel-Manager-Meta-Connection-525ec2e53c284c68a3002f6de1247b6f
+Regal hotels,Y,Y,Y,Y,Y,-,-,-,-,Y,Rockhopper,N,N,N,N,N,N,N,N,N,Google,90x7+2 adults,N,Y,-,-,N,N,Y,,Custom integtation Client,Custom integration
+Regatta (Parent company Kognitiv),-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Add onboard script via GTM!
+ReservHotel,Y,Y,Y,Y,Y,-,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,,Send onboard script to their account manager
+Reservit,Y,Y,Y,Y,Y,-,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,"100€ fee one off fee to implement the Convert tag will have to be paid if the hotel asks ReservIt to do it
+ReservIt (300€ One off Set Up, 60€ Monthly Maintenance - Paid directly to ReservIt)",,Send Client Key and API keys
+ResEze (MaestroPMS),Y,Y,Y,Y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,100$ fee,Integration review for Price Match,"Note, we now have a full integration for Reseze, previsouly self integrated. Send script as normal 
+
+You can run test bookings by entering CC: #1234123412341234 "
+ResNet,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling. Include URL deeplink,Add onboard script via GTM!
+ResNexus ,Y,Y,Y,Y,Y,-,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,,"Client just goes to Settings -> Reservation Sources and adds API keys
+ I had to send client key/api to resnexus account manager"
+ResOnTheWeb (Autoclerk),Y,Y,Y,Y,y,y,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,mailto: resontheweb@autoclerk.com with Client Key and API keys
+Resort Data Processing (http://irm.net/),Y,Y,Y,Y,Y,-,-,-,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,"$2k set up fee and annual maintenance of $1,200",All properties should have GTM so there aren’t integration fees applied anymore for script integration ,Add onboard script via GTM! Send scripts to their account manager duplicating a live client.
+Rezopia,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,No active customer. Integration review ,Sending Client Key and API keys to their support team seems to get the trick done
+Reztrip/Traveltripper (parent company Pegasus),Y,Y,Y,Y,Y,-,-,-,-,Blocked,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,Normally there is a $200 integration fee per hotel. Additional setup fee 75 € / hotel paid to Wihp,Price Match to be review,"Follow: https://www.notion.so/triptease/Pegasus-TravelTripper-reztrip-Convert-Integration-9f4040e6cdb8416394cc5304492b4d46
+https://www.notion.so/triptease/Pegasus-Only-TravelTripper-reztrip-BE-Metasearch-Integration-Process-6ed5e10abb1d4582acfb8c8c85549ae6#05b39346e6a148678aa880463160e355"
+rGuest Book (Agilysys),Y,Y,Y,Y,Y,-,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,,
+RMS Cloud,Y,Y,Y,Y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,Y (90 days),-,N,N,Y,,,Add onboard script to GTM container
+ROIBack ,Y,Y,Y,Y,Y,"We can work with PM as long as their strategy is aligned and they do not use Geo rates nor Device rates.
+
+","
+Ask the client, but they will mostly have PUSHTECH since it is the CRM that Roiback offers.
+",Y,-,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,Y (90 days),-,N,N,Y,,"""Roiback have a partnership with THN whereby they resell the THN widget and receive referral revenue from THN.""",Send onboard scripts to account manager/Direct Channel Specialist
+Roomer,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review,Send API keys
+Roomkey,Y,Y,Y,Y,N,-,-,-,-,Blocked,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,-,N,N,N,N,,"For the majority of clients meta won't work. Only if they their rates codes are pretty much static
+Rockhopper connectivity is blocked",For metasearch: This connection always pulls inaccurate rates because the PMS doesn't filter the rates. Send client key and api key to account manager. Wihp needs to roomkey ID and API Key in order to complete the set up on their side.
+Seekda,Y,Y,Y,Y,Y,-,-,-,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,Integration review before selling for META Include URL deeplink,Send or add onboard script
+Selfbook,Y,Y,Y,Y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,Y (90 days),-,N,N,Y,,,Follow PIMs BE Onboarding page
+SHR/Windsurfer,Y,Y,Y,Y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,Y (90 days),-,N,N,Y,Triptease covers the integration cost for this booking engine $75 one off charge hotel does not need to know about this fee.,WebRezPro have several confirmation layouts some of which have the details we need on the page so we can integrate and some of which do not so they need to provide structured data. Please check the standard caveat with the client.,"Add onboard script on client's GTM container or send to support@shr.global
+Meta: https://www.notion.so/triptease/SHR-Windsurfer-Meta-Integration-bd476f7222b441bca045203f6a991c30
+In Rokery SHR is called Webrezpro"
+Silverbyte,Y,Y,Y,Y,Y,-,-,-,-,-,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,-,N,N,N,N,,Integration Check needed include URL,Send onboard script
+Simple Booking,Y,Y,Y,y,Y,N,-,-,,Y,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,N,-,N,N,Y,"SimpleBooking (90€ per hotel Annual Maintenance - SimpleBooking invoices hotel directly) Triptease should tell hotel to expect charge from SimpleBooking
+
+Simple Booking Charge some hotels to add the script or the GTM into their booking Engine
+","Several deals have been debooked due to not disclosing additional fees to integrate Triptease for convert and meta.  
+","Send onboard script to SimpleBooking support team.
+
+Connect using UBIO"
+Siteminder ,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),Coming Soon only for GHA,N,N,Y,Triptease pays Siteminder ongoing fees for every mutual customer. Currently renegotiating contract to be 15% 2 years ACV ( Partnership to confirm this information in 2025),,Send hotel champion the hotel and client key to add into their Siteminder extranet
+"Staah (swiftbooking, Staah max, SecureStaah)",Y,Y,Y,Y,Y,y,-,-,-,Y,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,Staah has their own back end to integrate Triptease. Please share Entity ID with account manager.
+Synxis ,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),,N,N,Y,,,"Preferred integration method is via GTM. If the client doesn't have one then they can ask Sabre to add the script, but there's an integration fee"
+Taj,Y,Y,Y,Y,Y,-,-,-,-,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,-,-,N,N,Y,,Client BE,
+ThinkReservations,Y,Y,Y,Y,Y,-,-,-,Y,-,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,,ThinkReservations support has gone cold before and taken a really long time to do the integration. Don't promise this being quick.
+Travelanium,Y,Y,Y,Y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7,Y,Y,Y (90 days),Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,Y (90 days),-,N,N,Y,,,"Send Client and Hotel keys to Travelanium team mailto:ss@travelanium.com
+LH finalising script to support multiple layouts as of 18/02/2022
+If new hotel to use Travelanium API, Hotel needs to reach out to connect@travelanium.com to request the opening of a Rate API connection for Triptease.
+No connect with UBIO blocking just regular RH"
+UIBS,Y,Y,Y,Y,Y,-,-,-,-,Y,Rockhopper,N,N,N,N,N,N,N,N,N,Google,90x7+2 adults,N,Y,-,-,N,N,Y,,"Integration review, include URL ",Send onboard script
+Vertical Booking,Y,Y,Y,n,Y,Y,-,-,-,Y,wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,Y (90 days),Y,Y,Y,Y,N,180x7,N,N,Y (90 days),N,N,N,N,"Vertical Booking (150€ One Off Set Up, 250€ Annual Maintenance - Vertical Booking invoices hotel directly) Triptease should tell hotel to expect charge from Vertical Booking.
+From 2025 please Sales review this fees",Currenly facing an issue which we can not connect with our connectivity. Bots issue. Before sell PM please ask price-match channel ,Add or send onboard script to be added in GTM. If the client doesn't have GTM is best they add one to facilitate the integration
+Viato,Y,Y,Y,Y,Y,N,-,-,-,Blocked,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,N,N,N,N,N,N,N,N,N,,"
+
+Mainly for Centro Hotels in Germany
+Integration review. Include URL // API with Wihp needs to be built yet for Metasearch. // Unable to do price match as Viato blocks Rh scraping. ","Although LH has taken over the Viato BE script, you still need to reach out to the following contacts to have them inject the Triptease scripts on the website and BE when new properties are added:
+
+BE: [info@viato.net](mailto:info@viato.net)
+
+Website: [a.barth@xport.de](mailto:a.barth@xport.de) - Alexander Barth 
+"
+Vizergy,Y,Y,Y,Y,Y,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,"Integration review, provide URL too. ",Send onboard script to account manager/booking engine contact
+Webhotelier (ReserveOnline),Y,Y,Y,Y,Y,Y,-,-,Y,Y,Wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,"For WIHP/meta - Webhotelier provides ID as well as username and password so WIHP can get rates and QA
+ 
+
+ Send API key and client key to WebHotelier Convert"
+WebrezPro,Y,Y,Y,Y,Y,N,-,-,-,Y,Wihp,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,N,N,N,N,N,N,N,N,N,,PM not supported promo codes not working. ,"
+
+ Click ""Setup,"" then ""Property Settings"". Scroll down to section #2, under Online reservation settings you will see two boxes ""Tracking code for confirmation page only"" and ""Tracking code for all booking engine pages"" where analytics code can be added. Add Beacon or integration builder-created scripts."
+WitBooking,Y,Y,Y,Y,Y,-,-,-,-,-,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,-,-,N,N,Y,,PM feasibility check ,Self Integrated
+TheHoxton,Y,Y,Y,Y,Y,N,-,-,Y,Y,Rockhopper,N,N,N,N,N,N,N,N,N,Google,90x7+2 adults,N,Y,N,-,N,N,Y,,,
+Point A,Y,Y,Y,Y,Y,Y,-,-,Y,Y,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,
+GuestPro,Y,Y,Y,Y,Y,N,-,-,Y,Y,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,N,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,N,-,N,N,Y,,PM feasibility check,
+UP (myIBE),Y,Y,Y,Y,Y,Y,-,-,Y,Y,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,"We can run PM, however not able to validate the codes internally when breaks",
+Skipper,y,y,y,y,y,Y,y,-,-,-,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,"In Line/In Page Message not supported. (this is happening because the booking engine is mounted in a Shadow DOM (you can think of this like a new version of an iframe). As a result, the way we find elements with an XPath selector is breaking as it cannot ""see"" into the booking engine's shadow DOM.)",
+Guestdesk,y,y,y,y,y,y,-,-,-,-,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,N,Y,Y (90 days),-,N,N,Y,,,
+JustBestBooking,Y,Y,Y,Y,Y,-,-,-,-,-,Rockhopper,N,N,N,N,-,N,N,N,N,Google,90x7+2 adults,N,Y,-,-,N,N,Y,,,
+Skyware,Y,Y,Y,Y,Y,-,-,-,-,-,wihphopper,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",180x7,Y,Y,-,Y,Y,Y,Y,"Google, Tripadvisor, Trivago, Bing, Kayak, Skyscanner, Wego",90x7+2 adults,N,Y,-,-,N,N,Y,,,
+bookolo,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+Nightsbridge,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
+,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,,
