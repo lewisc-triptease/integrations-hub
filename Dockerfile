@@ -19,9 +19,8 @@ EXPOSE 8080
 
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/bun.lock ./bun.lock
+COPY bun.lock package.json ./
+RUN bun install --production --frozen-lockfile
 
 ENV PORT='8080'
 ENV GOOGLE_CLOUD_PROJECT='${GOOGLE_CLOUD_PROJECT}'

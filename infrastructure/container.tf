@@ -10,7 +10,6 @@ resource "google_service_account" "run_sa" {
   display_name = "Integrations Hub run account"
   
   lifecycle {
-    # Don't destroy if it exists
     prevent_destroy = true
   }
 }
@@ -29,9 +28,7 @@ resource "google_cloud_run_v2_service" "default" {
   deletion_protection = false
 
   lifecycle {
-    # Always update the service with new image, don't recreate
     ignore_changes = [
-      # Ignore automatic labels that Google adds (but not the provider-managed ones)
       labels
     ]
   }
@@ -40,6 +37,7 @@ resource "google_cloud_run_v2_service" "default" {
   template {
     containers {
       image = local.image_name
+      
       liveness_probe {
         http_get {
           path = "/health"
