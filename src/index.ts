@@ -4,11 +4,11 @@ import { createApp } from "./app.js";
 await configure({
   sinks: { console: getConsoleSink() },
   loggers: [
-    { category: "integration-hub", lowestLevel: "debug", sinks: ["console"] }
+    { category: "integrations-hub", lowestLevel: "debug", sinks: ["console"] }
   ]
 });
 
-const logger = getLogger(["integration-hub"]);
+const logger = getLogger(["integrations-hub"]);
 
 const app = createApp();
 

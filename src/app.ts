@@ -18,7 +18,7 @@ export function createApp() {
   
   app.route('/', uiRoutes);
   
-  app.use("/:file{.+\.(?!ts|tsx$)[^.]+$}", serveStatic({ root: "./public" }));
+  app.use("/:file{.+.(?!ts|tsx$)[^.]+$}", serveStatic({ root: "./public" }));
   
   return app;
 }

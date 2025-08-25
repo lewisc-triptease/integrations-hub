@@ -1,9 +1,7 @@
 import { Hono } from "hono";
-import { getLogger } from "@logtape/logtape";
 import { getIntegrationConfigs } from '../services/integrations.js';
 import { createResponseWithTrace } from '../middleware/response.js';
-
-const logger = getLogger(["integration-hub"]);
+import { logger } from "@/util/logger.ts";
 
 export const apiRoutes = new Hono();
 

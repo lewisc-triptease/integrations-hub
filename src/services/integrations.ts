@@ -1,7 +1,6 @@
-import { getLogger } from "@logtape/logtape";
 import { fetchIntegrationConfigsViaApi } from '../data-source/google/download.js';
+import { logger } from "@/util/logger.ts";
 
-const logger = getLogger(["integration-hub-service"]);
 
 export async function getIntegrationConfigs(traceId?: string) {
   if (!process.env.SHEET_NAME || !process.env.SHEET_GID) {
