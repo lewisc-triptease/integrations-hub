@@ -55,11 +55,13 @@ jobs:
 
       - name: Setup Infrastructure
         working-directory: infrastructure
+        timeout-minutes: 2
         run: |
           terraform init
 
       - name: Create Artifact Registry
         working-directory: infrastructure
+        timeout-minutes: 3
         run: |
           terraform apply -auto-approve \
             -target=google_artifact_registry_repository.integrations_hub \
@@ -85,6 +87,7 @@ jobs:
 
       - name: Deploy Service
         working-directory: infrastructure
+        timeout-minutes: 3
         run: |
           terraform apply -auto-approve \
             -var="image_tag=${{ github.sha }}" \
