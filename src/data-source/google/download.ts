@@ -1,15 +1,15 @@
-import { google } from "googleapis";
 import { parseIntegrationConfigsFromRows } from './parse.js';
 import { MemoryCache } from "@/util/memory-cache.ts";
 import { IntegrationConnectionConfiguration } from "@/data-source/google/types.ts";
 import { GoogleAuth } from "google-auth-library";
 import { logger } from "@/util/logger.ts";
+import { sheets as googleSheets } from "@googleapis/sheets";
 
 const sheetCache = new MemoryCache<IntegrationConnectionConfiguration[]>();
 const FIFTEEN_MIN_MS = 15 * 60 * 1000;
 
 async function getSheetTitleByGid(auth: GoogleAuth, spreadsheetId: string, gid: string): Promise<string> {
-  const sheets = google.sheets({ version: "v4", auth });
+  const sheets = googleSheets({ version: "v4", auth });
   const meta = await sheets.spreadsheets.get({
     spreadsheetId,
     fields: "sheets(properties(sheetId,title))",
@@ -26,7 +26,7 @@ async function getSheetTitleByGid(auth: GoogleAuth, spreadsheetId: string, gid: 
 }
 
 async function getValues(auth: GoogleAuth, spreadsheetId: string, sheetTitle: string): Promise<string[][]> {
-  const sheets = google.sheets({ version: "v4", auth });
+  const sheets = googleSheets({ version: "v4", auth });
   try {
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId,
@@ -49,7 +49,7 @@ async function getValues(auth: GoogleAuth, spreadsheetId: string, sheetTitle: st
 
 
 export async function createSheetsAuth() {
-  return new google.auth.GoogleAuth({
+  return new GoogleAuth({
     scopes: [
       "https://www.googleapis.com/auth/spreadsheets.readonly",
       "https://www.googleapis.com/auth/drive.readonly",
