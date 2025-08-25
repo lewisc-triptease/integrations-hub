@@ -1,10 +1,4 @@
-import AgGrid, { type GridOptions, type ColDef, type ColGroupDef } from 'ag-grid-community';
-
-declare global {
-  interface Window {
-    agGrid?: typeof AgGrid;
-  }
-}
+import { createGrid, type GridOptions, type ColDef, type ColGroupDef } from 'ag-grid-community';
 
 // Boolean renderer for Y/N values
 function booleanRenderer(params: any) {
@@ -16,7 +10,7 @@ function booleanRenderer(params: any) {
   return params.value || '';
 }
 
-const columnDefs: Array<ColDef | ColGroupDef> = [
+const columnDefs: (ColDef | ColGroupDef)[] = [
   {
     headerName: "Integration",
     field: "integrationName",
@@ -77,13 +71,11 @@ const columnDefs: Array<ColDef | ColGroupDef> = [
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
-  const agGrid = window.agGrid;
   const gridDiv = document.querySelector<HTMLDivElement>('div#data-grid');
   
-  if (gridDiv && agGrid) {
+  if (gridDiv) {
     try {
       const integrationsAttr = gridDiv.getAttribute('data-integrations');
-      const columnsAttr = gridDiv.getAttribute('data-columns');
       
       if (integrationsAttr) {
         const integrations = JSON.parse(integrationsAttr);
@@ -100,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
               flex: 1,
             },
             components: {
-              booleanRenderer: booleanRenderer
+              booleanRenderer
             },
             autoSizeStrategy: {
               type: 'fitGridWidth',
@@ -109,15 +101,18 @@ document.addEventListener('DOMContentLoaded', function() {
             pagination: true,
             paginationPageSize: 20,
             paginationPageSizeSelector: [10, 20, 50, 100],
+            suppressRowClickSelection: true,
+            enableRangeSelection: true,
             enableCellTextSelection: true,
             copyHeadersToClipboard: true,
+            suppressCopyRowsToClipboard: false,
             rowHeight: 40,
             headerHeight: 45,
             animateRows: true,
             enableBrowserTooltips: true,
           };
           
-          agGrid.createGrid(gridDiv, gridOptions);
+          createGrid(gridDiv, gridOptions);
         }
       }
     } catch (error) {
