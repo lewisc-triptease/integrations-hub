@@ -6,7 +6,7 @@ on:
 
 env:
   PROJECT_ID: triptease-onboard
-  GAR_LOCATION: us-east1
+  GAR_LOCATION: us
   REPOSITORY: integrations-hub
   SERVICE: integrations-hub
   REGION: us-central1
