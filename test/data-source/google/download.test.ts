@@ -5,9 +5,8 @@ let calls = {
   values: 0,
 };
 
-mock.module("googleapis", () => {
+mock.module("@googleapis/sheets", () => {
   return {
-    google: {
       sheets: ({ auth }: { auth: any }) => {
         return {
           spreadsheets: {
@@ -45,9 +44,8 @@ mock.module("googleapis", () => {
           async getClient() { return { token: "fake-client" }; }
         },
       },
-    },
-  } as any;
-});
+    }
+  });
 
 import { fetchIntegrationConfigsViaApi } from "../../../src/data-source/google/download.js";
 import { MemoryCache } from "../../../src/util/memory-cache.js";
