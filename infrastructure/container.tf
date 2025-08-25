@@ -12,8 +12,8 @@ resource "google_service_account" "run_sa" {
 
 resource "google_artifact_registry_repository_iam_member" "puller" {
   project    = var.project_id
-  location   = google_artifact_registry_repository.integrations_hub.location
-  repository = google_artifact_registry_repository.integrations_hub.repository_id
+  location   = data.google_artifact_registry_repository.integrations_hub.location
+  repository = data.google_artifact_registry_repository.integrations_hub.repository_id
   role       = "roles/artifactregistry.reader"
   member     = "serviceAccount:${google_service_account.run_sa.email}"
 }
