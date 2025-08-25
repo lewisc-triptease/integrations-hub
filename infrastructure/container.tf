@@ -1,7 +1,13 @@
 variable "project_id" { default = "triptease-onboard" }
 variable "image_tag" { default = "latest" }
-variable "sheet_gid" { type = string }
-variable "sheet_name" { type = string }
+variable "sheet_gid" { 
+  type = string
+  default = "0"
+}
+variable "sheet_name" { 
+  type = string
+  default = "Sheet1"
+}
 
 locals {
   image_name = "us-docker.pkg.dev/${var.project_id}/integrations-hub/integrations_hub:${var.image_tag}"
