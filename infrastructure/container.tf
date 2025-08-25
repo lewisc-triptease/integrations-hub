@@ -36,7 +36,6 @@ resource "google_cloud_run_v2_service" "default" {
         period_seconds        = 10
         timeout_seconds       = 5
         failure_threshold     = 3
-        success_threshold     = 1
       }
     }
     scaling {
