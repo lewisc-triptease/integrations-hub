@@ -1,4 +1,10 @@
-import { createGrid, type GridOptions, type ColDef, type ColGroupDef } from 'ag-grid-community';
+import AgGrid, { type GridOptions, type ColDef, type ColGroupDef } from 'ag-grid-community';
+
+declare global {
+  interface Window {
+    agGrid?: typeof AgGrid;
+  }
+}
 
 // Boolean renderer for Y/N values
 function booleanRenderer(params: any) {
@@ -111,8 +117,9 @@ document.addEventListener('DOMContentLoaded', function() {
             animateRows: true,
             enableBrowserTooltips: true,
           };
-          
-          createGrid(gridDiv, gridOptions);
+          if (window.agGrid) {
+            window.agGrid.createGrid(gridDiv, gridOptions);
+          }
         }
       }
     } catch (error) {

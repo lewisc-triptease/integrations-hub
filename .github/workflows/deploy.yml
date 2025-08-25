@@ -15,6 +15,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     name: Test, Build & Deploy
+    concurrency:
+      group: deploy-${{ github.ref }}
+      cancel-in-progress: true
     
     steps:
       - name: Checkout
@@ -57,13 +60,13 @@ jobs:
         working-directory: infrastructure
         timeout-minutes: 2
         run: |
-          terraform init
+          terraform init -upgrade
 
       - name: Create Artifact Registry
         working-directory: infrastructure
         timeout-minutes: 3
         run: |
-          terraform apply -auto-approve \
+          terraform apply -auto-approve -lock=false \
             -target=google_artifact_registry_repository.integrations_hub \
             -var="image_tag=${{ github.sha }}" \
             -var="sheet_gid=${{ vars.SHEET_GID }}" \
@@ -89,7 +92,7 @@ jobs:
         working-directory: infrastructure
         timeout-minutes: 3
         run: |
-          terraform apply -auto-approve \
+          terraform apply -auto-approve -lock=false \
             -var="image_tag=${{ github.sha }}" \
             -var="sheet_gid=${{ vars.SHEET_GID }}" \
             -var="sheet_name=${{ vars.SHEET_NAME }}"
