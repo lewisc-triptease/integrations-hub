@@ -63,7 +63,7 @@ resource "google_cloud_run_v2_service_iam_binding" "org_only" {
   name     = google_cloud_run_v2_service.default.name
 
   role    = "roles/run.invoker"
-  members = ["domain:triptease.com"]
+  members = ["allUsers"]
 }
 
 output "service_url" {
