@@ -7,13 +7,18 @@ locals {
 
 resource "google_service_account" "run_sa" {
   account_id   = "integrations-hub"
-  display_name = "Cloud Run runtime"
+  display_name = "Integrations Hub run account"
+  
+  lifecycle {
+    # Don't destroy if it exists
+    prevent_destroy = true
+  }
 }
 
 resource "google_artifact_registry_repository_iam_member" "puller" {
   project    = var.project_id
-  location   = data.google_artifact_registry_repository.integrations_hub.location
-  repository = data.google_artifact_registry_repository.integrations_hub.repository_id
+  location   = google_artifact_registry_repository.integrations_hub.location
+  repository = google_artifact_registry_repository.integrations_hub.repository_id
   role       = "roles/artifactregistry.reader"
   member     = "serviceAccount:${google_service_account.run_sa.email}"
 }
@@ -22,6 +27,14 @@ resource "google_cloud_run_v2_service" "default" {
   name     = "integrations-hub"
   location = "us-central1"
   deletion_protection = false
+
+  lifecycle {
+    # Always update the service with new image, don't recreate
+    ignore_changes = [
+      # Ignore automatic labels that Google adds (but not the provider-managed ones)
+      labels
+    ]
+  }
   ingress = "INGRESS_TRAFFIC_ALL"
 
   template {
