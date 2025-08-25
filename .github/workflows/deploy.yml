@@ -58,6 +58,11 @@ jobs:
         run: |
           terraform init
 
+      - name: Create Artifact Registry
+        working-directory: infrastructure
+        run: |
+          terraform apply -auto-approve -target=google_artifact_registry_repository.integrations_hub
+
       - name: Docker Auth
         uses: docker/login-action@v3
         with:
