@@ -22,11 +22,8 @@ COPY --from=builder /app/public ./public
 COPY bun.lock package.json ./
 RUN bun install --production --frozen-lockfile
 
-ENV PORT='8080'
-ENV GOOGLE_CLOUD_PROJECT='${GOOGLE_CLOUD_PROJECT}'
-ENV SHEET_GID='${SHEET_GID}'
-ENV SHEET_NAME='${SHEET_NAME}'
-ENV LOG_LEVEL='info'
+ENV PORT=8080
+ENV LOG_LEVEL=info
 
 CMD ["bun", "run", "dist/index.js"]
 

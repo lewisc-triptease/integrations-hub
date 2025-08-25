@@ -1,5 +1,7 @@
 variable "project_id" { default = "triptease-onboard" }
 variable "image_tag" { default = "latest" }
+variable "sheet_gid" { type = string }
+variable "sheet_name" { type = string }
 
 locals {
   image_name = "us-docker.pkg.dev/${var.project_id}/integrations-hub/integrations_hub:${var.image_tag}"
@@ -37,6 +39,19 @@ resource "google_cloud_run_v2_service" "default" {
   template {
     containers {
       image = local.image_name
+      
+      env {
+        name = "GOOGLE_CLOUD_PROJECT"
+        value = var.project_id
+      }
+      env {
+        name = "SHEET_GID"  
+        value = var.sheet_gid
+      }
+      env {
+        name = "SHEET_NAME"
+        value = var.sheet_name
+      }
       
       liveness_probe {
         http_get {
